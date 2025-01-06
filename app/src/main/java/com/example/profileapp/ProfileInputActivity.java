@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class ProfileInputActivity extends AppCompatActivity {
 
     @Override
@@ -18,9 +20,9 @@ public class ProfileInputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_input);
 
-        EditText etName = findViewById(R.id.et_name);
-        EditText etAge = findViewById(R.id.et_age);
-        EditText etEmail = findViewById(R.id.et_email);
+        TextInputEditText etName = findViewById(R.id.input_name);
+        TextInputEditText etAge = findViewById(R.id.input_age);
+        TextInputEditText etEmail = findViewById(R.id.input_email);
         Button btnSubmit = findViewById(R.id.btn_submit);
 
         btnSubmit.setOnClickListener(v -> {
@@ -32,6 +34,7 @@ public class ProfileInputActivity extends AppCompatActivity {
             intent.putExtra("NAME", name);
             intent.putExtra("AGE", age);
             intent.putExtra("EMAIL", email);
+//            overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right);
             startActivity(intent);
         });
     }
