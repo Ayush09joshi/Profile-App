@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -10,17 +11,23 @@
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name: " />
+        android:layout_marginTop="15dp"
+        android:text="Name: "
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Age: " />
+        android:layout_marginTop="15dp"
+        android:text="Age: "
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email: " />
+        android:layout_marginTop="15dp"
+        android:text="Email: "
+        android:textSize="20sp" />
 </LinearLayout>

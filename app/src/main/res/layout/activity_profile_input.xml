@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/et_name"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
-        android:inputType="textPersonName" />
+        android:layout_marginTop="15dp">
 
-    <EditText
-        android:id="@+id/et_age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Age"
-        android:inputType="number" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/et_email"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Email"
-        android:inputType="textEmailAddress" />
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Age" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="Submit" />
 </LinearLayout>
